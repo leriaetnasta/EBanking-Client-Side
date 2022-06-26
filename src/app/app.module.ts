@@ -1,16 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CustomersComponent } from './customers/customers.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { CustomerstableComponent } from './customerstable/customerstable.component';
+import { AlertComponentComponent } from './alert-component/alert-component.component';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchFormComponent } from './search-form/search-form.component';
+import { AddNewCustomerComponent } from './add-new-customer/add-new-customer.component';
+import { CustomerAccountsComponent } from './customer-accounts/customer-accounts.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    CustomersComponent,
+    AccountsComponent,
+    CustomerstableComponent,
+    AlertComponentComponent,
+    LoadingSpinnerComponent,
+    SearchFormComponent,
+    AddNewCustomerComponent,
+    CustomerAccountsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
